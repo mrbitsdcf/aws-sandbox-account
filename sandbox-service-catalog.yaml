@@ -50,16 +50,16 @@ Resources:
       Description: "This product builds a SCP and budget on the MASTER account and start a stack set in a Sandbox account"
       Distributor: "Amazon"
       Name: "Sandbox Account"
-      Owner: "Matheus Arrais"
-      SupportEmail: "support@yourcompany.com"
+      Owner: "Diogo Fernandes"
+      SupportEmail: "diogo.fernandes@la.logicalis.com"
       SupportUrl: "https://www.amazon.com"
       SupportDescription: "Support Description"
       ProvisioningArtifactParameters:
       -
-        Description: "Feb 2020"
-        Name: "Feb 2020"
+        Description: "May 2022"
+        Name: "May 2022"
         Info:
-          LoadTemplateFromURL : "https://raw.githubusercontent.com/matheuslra/aws-sandbox-account/master/sandbox-start.yaml"
+          LoadTemplateFromURL : "https://raw.githubusercontent.com/mrbitsdcf/aws-sandbox-account/master/sandbox-start.yaml"
 
 #Association between Service Catalog Portfolio and Product
   AccountSandboxAssociation: 

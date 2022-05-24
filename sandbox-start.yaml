@@ -138,7 +138,7 @@ Resources:
       Role: !GetAtt LambdaRole.Arn
       Timeout: 180
       Code:
-        S3Bucket: masterbuilder-account-sandbox
+        S3Bucket: masterbuilder-account-sandbox-213279787709-sa-east-1
         S3Key: "5-CustomworkingLambdaCode.zip"
       Environment:
         Variables:
@@ -168,7 +168,7 @@ Resources:
       - LambdaRole
     Properties:
       Code:
-        S3Bucket: masterbuilder-account-sandbox
+        S3Bucket: masterbuilder-account-sandbox-213279787709-sa-east-1
         S3Key: "create-scp.zip"
       Environment:
         Variables:
@@ -195,7 +195,7 @@ Resources:
       - LambdaRole
     Properties:
       Code:
-        S3Bucket: masterbuilder-account-sandbox
+        S3Bucket: masterbuilder-account-sandbox-213279787709-sa-east-1
         S3Key: "create-scp-deploy.zip"
       Environment:
         Variables:

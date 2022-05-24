@@ -148,7 +148,7 @@ Resources:
           'stackregion' : !Ref StackRegion
           'executionrole' : "AWSControlTowerExecution"
           'administrationrole': !Join [":", ["arn:aws:iam:", !Ref "AWS::AccountId", "role/service-role/AWSControlTowerStackSetRole"]]
-          'sourcebucket' : "masterbuilder-account-sandbox"
+          'sourcebucket' : "masterbuilder-account-sandbox-213279787709-sa-east-1"
           'accountsandboxtemplate': "sandbox-deploy.yaml"
           'accountdays': !Ref DaysForAccount
           'increaseec2': !Ref IncreaseLimitEC2

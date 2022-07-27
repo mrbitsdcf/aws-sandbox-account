@@ -56,8 +56,8 @@ Resources:
       SupportDescription: "Support Description"
       ProvisioningArtifactParameters:
       -
-        Description: "May 2022"
-        Name: "May 2022"
+        Description: "Jul 2022"
+        Name: "Jul 2022"
         Info:
           LoadTemplateFromURL : "https://raw.githubusercontent.com/mrbitsdcf/aws-sandbox-account/master/sandbox-start.yaml"
 

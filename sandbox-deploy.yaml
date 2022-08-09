@@ -226,7 +226,7 @@ Resources:
       - LambdaRole
     Properties:
       Code:
-        S3Bucket: masterbuilder-account-sandbox-aws-safra-br-us-east-1
+        S3Bucket: masterbuilder-account-sandbox-213279787709-us-east-1
         S3Key: "create-increase-ec2.zip"  
       FunctionName: IncreaseLimitEC2Function
       Description: "Function for increase limit ec2 on the sandbox account"

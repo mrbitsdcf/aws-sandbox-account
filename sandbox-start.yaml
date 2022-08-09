@@ -138,7 +138,7 @@ Resources:
       Role: !GetAtt LambdaRole.Arn
       Timeout: 180
       Code:
-        S3Bucket: masterbuilder-account-sandbox-aws-safra-br-sa-east-1
+        S3Bucket: masterbuilder-account-sandbox-213279787709-sa-east-1
         S3Key: "5-CustomworkingLambdaCode.zip"
       Environment:
         Variables:
@@ -148,7 +148,7 @@ Resources:
           'stackregion' : !Ref StackRegion
           'executionrole' : "AWSControlTowerExecution"
           'administrationrole': !Join [":", ["arn:aws:iam:", !Ref "AWS::AccountId", "role/service-role/AWSControlTowerStackSetRole"]]
-          'sourcebucket' : "masterbuilder-account-sandbox-aws-safra-br-sa-east-1"
+          'sourcebucket' : "masterbuilder-account-sandbox-213279787709-sa-east-1"
           'accountsandboxtemplate': "sandbox-deploy.yaml"
           'accountdays': !Ref DaysForAccount
           'increaseec2': !Ref IncreaseLimitEC2
@@ -168,7 +168,7 @@ Resources:
       - LambdaRole
     Properties:
       Code:
-        S3Bucket: masterbuilder-account-sandbox-aws-safra-br-sa-east-1
+        S3Bucket: masterbuilder-account-sandbox-213279787709-sa-east-1
         S3Key: "create-scp.zip"
       Environment:
         Variables:
@@ -195,7 +195,7 @@ Resources:
       - LambdaRole
     Properties:
       Code:
-        S3Bucket: masterbuilder-account-sandbox-aws-safra-br-sa-east-1
+        S3Bucket: masterbuilder-account-sandbox-213279787709-sa-east-1
         S3Key: "create-scp-deploy.zip"
       Environment:
         Variables:

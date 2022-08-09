@@ -215,10 +215,3 @@ Resources:
       ServiceToken: !GetAtt 'CreateSCPDeploy.Arn'
       LambdaRegion: !Ref "AWS::Region"
       LambdaName: !Ref CreateSCPDeploy
-
-
-
-
-  
-
-

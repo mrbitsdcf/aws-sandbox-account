@@ -504,13 +504,13 @@ Resources:
             install:
               commands:
                 - apt-get install jq zip unzip
-                - wget https://github.com/mrbitsdcf/aws-sandbox-account/raw/master/aws-nuke.zip
+                - wget https://github.com/matheuslra/aws-sandbox-account/raw/master/aws-nuke.zip
                 - unzip aws-nuke.zip -d /bin/
                 - chmod +x /bin/aws-nuke
             build:
               commands:
                 - account_id=$(aws ssm get-parameter --name account_id --output text | awk '{print $6}')
-                - wget https://raw.githubusercontent.com/mrbitsdcf/aws-sandbox-account/master/aws-nuke-config.yaml;
+                - wget https://raw.githubusercontent.com/matheuslra/aws-sandbox-account/master/aws-nuke-config.yaml;
                 - sed -e "s/000000000000/$account_id/g" aws-nuke-config.yaml > $account_id.yaml;
                 - echo "Assuming Role for Account ($account_id)";
                 - curl 169.254.170.2$AWS_CONTAINER_CREDENTIALS_RELATIVE_URI  > $account_id.json;
@@ -553,13 +553,13 @@ Resources:
             install:
               commands:
                 - apt-get install jq zip unzip
-                - wget https://github.com/mrbitsdcf/aws-sandbox-account/raw/master/aws-nuke.zip
+                - wget https://github.com/matheuslra/aws-sandbox-account/raw/master/aws-nuke.zip
                 - unzip aws-nuke.zip -d /bin/
                 - chmod +x /bin/aws-nuke
             build:
               commands:
                 - account_id=$(aws ssm get-parameter --name account_id --output text | awk '{print $6}')
-                - wget https://raw.githubusercontent.com/mrbitsdcf/aws-sandbox-account/master/aws-nuke-config.yaml;
+                - wget https://raw.githubusercontent.com/matheuslra/aws-sandbox-account/master/aws-nuke-config.yaml;
                 - sed -e "s/000000000000/$account_id/g" aws-nuke-config.yaml > $account_id.yaml;
                 - echo "Assuming Role for Account ($account_id)";
                 - curl 169.254.170.2$AWS_CONTAINER_CREDENTIALS_RELATIVE_URI  > $account_id.json;
